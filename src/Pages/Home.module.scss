@@ -1,0 +1,17 @@
+$bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
+$bg-width: 500px;
+$bg-height: 0px;
+
+@keyframes bg-scrolling {
+	0% {
+		background-position: $bg-width $bg-height;
+	}
+}
+
+.background {
+	height: 100%;
+	background: url($bg-url) repeat;
+	filter: invert(0.9);
+	animation: bg-scrolling linear infinite;
+	animation-play-state: running;
+}
